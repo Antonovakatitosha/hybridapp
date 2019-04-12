@@ -1,0 +1,11 @@
+<div class="container">
+  <h2>Welcome Angular 6 </h2>
+  <mat-form-field class="example-full-width">
+    <input matInput placeholder="Input your INIT3 parameter" [(ngModel)]="init3">
+  </mat-form-field>
+  <a class="navigation-link"
+     [routerLink]="['/welcome-js']"
+     [queryParams]="{init3: init3}">
+    Go to next page
+  </a>
+</div>
